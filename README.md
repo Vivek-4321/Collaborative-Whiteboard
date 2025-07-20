@@ -23,15 +23,6 @@ A real-time collaborative whiteboard application built with the MERN stack (Mong
 - **Responsive Design**: Works on desktop and tablet devices
 - **Persistent Storage**: Drawing data persists across sessions
 
-## Demo
-
-Watch the collaborative whiteboard in action:
-
-<video width="100%" controls style="border-radius: 8px;">
-  <source src="https://firebasestorage.googleapis.com/v0/b/blog-app-5ed76.appspot.com/o/Collaborate-Whiteboard.webm?alt=media&token=b11cc48a-4f9c-430d-b494-2f674f2949c5" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-
 ## Technology Stack
 
 - **Frontend**: React.js with Vite
