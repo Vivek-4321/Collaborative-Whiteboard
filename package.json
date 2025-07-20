@@ -1,0 +1,43 @@
+{
+  "name": "collaborative-whiteboard",
+  "version": "1.0.0",
+  "description": "A real-time collaborative whiteboard application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for live collaboration.",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=client && npm install --workspace=server",
+    "install:client": "npm install --workspace=client",
+    "install:server": "npm install --workspace=server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:client": "npm run preview --workspace=client",
+    "start:server": "npm run start --workspace=server",
+    "build": "npm run build --workspace=client",
+    "lint": "npm run lint --workspace=client",
+    "clean": "rm -rf node_modules client/node_modules server/node_modules",
+    "fresh-install": "npm run clean && npm run install:all"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "whiteboard",
+    "collaboration",
+    "realtime",
+    "react",
+    "express",
+    "socket.io",
+    "full-stack"
+  ],
+  "author": "Vivek Venugopal",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

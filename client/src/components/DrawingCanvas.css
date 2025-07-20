@@ -1,0 +1,47 @@
+.drawing-canvas-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drawing-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: none;
+  background: white;
+  border-radius: 8px;
+  touch-action: none;
+  position: relative;
+}
+
+.custom-cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1500;
+}
+
+.crosshair-svg {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: all 0.1s ease;
+}
+
+.crosshair-svg.active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .drawing-canvas {
+    cursor: none;
+  }
+  
+  .drawing-canvas-container {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
